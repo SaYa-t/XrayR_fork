@@ -73,6 +73,33 @@ A Xray backend framework that can easily support many panels.
 wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
 ```
 
+开放端口
+```
+firewall-cmd --zone=public --add-port=443/tcp --permanent
+firewall-cmd --reload
+```
+
+配置文件位置
+```
+/etc/XrayR/config.yml
+```
+
+sspanel前端自定义配置
+ws+tls示例
+```
+{
+  "offset_port_node": "443",
+  "server_sub": "tube",
+  "host": "tube",
+  "alter_id": "0",
+  "network": "ws",
+  "security": "tls",
+  "path": "/movie/.ts"
+}
+```
+
+
+
 ### 使用Docker部署软件
 
 [Docker部署教程](https://xrayr-project.github.io/XrayR-doc/xrayr-xia-zai-he-an-zhuang/install/docker)
