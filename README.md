@@ -71,6 +71,10 @@ A Xray backend framework that can easily support many panels.
 
 ```
 wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
+
+or
+
+wget --inet4-only -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
 ```
 
 开放端口
