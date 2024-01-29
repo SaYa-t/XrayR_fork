@@ -80,6 +80,7 @@ wget --inet4-only -N https://raw.githubusercontent.com/XrayR-project/XrayR-relea
 开放端口
 ```
 firewall-cmd --zone=public --add-port=443/tcp --permanent
+firewall-cmd --zone=public --add-port=443/udp --permanent
 firewall-cmd --reload
 ```
 
