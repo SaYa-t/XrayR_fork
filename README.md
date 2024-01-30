@@ -75,6 +75,10 @@ wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/ins
 or
 
 wget --inet4-only -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
+
+or
+
+bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 ```
 
 开放端口
