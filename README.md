@@ -85,6 +85,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/ma
 ```
 firewall-cmd --zone=public --add-port=443/tcp --permanent
 firewall-cmd --zone=public --add-port=443/udp --permanent
+firewall-cmd --zone=public --add-port=1443/tcp --permanent
+firewall-cmd --zone=public --add-port=1443/udp --permanent
 firewall-cmd --reload
 ```
 
