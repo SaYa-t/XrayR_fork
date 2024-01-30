@@ -91,6 +91,7 @@ firewall-cmd --reload
 配置文件位置
 ```
 /etc/XrayR/config.yml
+cd /etc/XrayR
 ```
 
 sspanel前端自定义配置
@@ -98,12 +99,16 @@ ws+tls示例
 ```
 {
   "offset_port_node": "443",
-  "server_sub": "tube",
-  "host": "tube",
+  "server_sub": "node.cloud",
+  "host": "node.cloud",
   "alter_id": "0",
   "network": "ws",
   "security": "tls",
-  "path": "/movie/.ts"
+  "path": "/movie/video.ts",
+  "udp": false,
+  "ws-opts": {
+    "path": "/movie/video.ts"
+  }
 }
 ```
 
